@@ -1,0 +1,18 @@
+<form>
+    <label>Username:</label>
+    <input type="text" id="Username">
+    <br><br>
+    <button onclick="validate()">Submit</button>
+</form>
+
+<script>
+    function validate() {
+        let pattern = /^[a-zA-Z]{2,15}$/
+        let data = document.getElementById('username').value;
+        if (pattern.test(data)) {
+            alert('Valid Username');
+        } else {
+            alert('Invalid Data..!');
+        }
+    }
+</script>

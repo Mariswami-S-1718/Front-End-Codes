@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Focus Pseudo Class</title>
+    <style>
+        input[type='email']:focus {
+            background-color: gray;
+        }
+        input[type='text']:focus {
+            color: red;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+    <label for="name" placeholder="Enter your name" required>Name: </label>
+    <input type="text">
+    <br><br>
+    <label for="email" placeholder="Enter your email" required>Email</label>
+    <input type="email">
+    <br><br>
+    <input type="submit"> <input type="reset">
+</body>
+</html>

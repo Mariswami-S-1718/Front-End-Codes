@@ -1,0 +1,32 @@
+<script>
+    class Student {
+        constructor(name, id, paid_amt) {
+            this.s_name = name;
+            this.s_id = id;
+            this.amt = paid_amt;
+        }
+        javaCourse() {
+            console.log(this.s_name, "Enrolled for java");
+        }
+        pythonCourse() {
+            console.log(this.s_name, "Enrolled for python");
+        }
+        getInfo() {
+            console.log("Student Name is: ",this.s_name);
+            console.log("Student ID is: ",this.s_id);
+            console.log("Paid Amount is: ",this.amt);
+        }
+    }
+
+    s1 = new Student('Cristiano', 101, 30000);
+    s1.javaCourse();
+    s2 = new Student('Virat', 102, 25000);
+    s2.pythonCourse();
+
+    s1.getInfo();
+    s2.getInfo();
+
+    console.log(s1.s_name); //Cristiano
+    console.log(s2.s_name, s2.s_id); //Virat 102
+
+</script>

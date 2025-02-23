@@ -1,0 +1,19 @@
+<h1 id="heading"></h1>
+<button id="btn">click</button>
+<script>
+    let btn = document.getElementById('btn');
+    let toggle = true;
+    btn.addEventListener('click',()=>{
+        let target = document.getElementById('heading');
+        if (toggle == true) {
+            target.textContent = 'Hello';
+            toggle = false;
+        } 
+        else {
+            target.textContent = '';
+            toggle = true;
+        }
+    })
+</script>
+
+<!-- Selects a single element by its ID -->

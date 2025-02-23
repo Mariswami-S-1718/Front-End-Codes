@@ -1,0 +1,29 @@
+<script>
+    class Employee {
+        constructor(name, id, sal) {
+            this.e_name = name;
+            this.e_id = id;
+            this.e.sal = sal;
+        }
+        work() {
+            console.log(this.e_name, " is Working");
+        }
+        code() {
+            console.log(this.e_name, " is coding");
+        }
+        getInfo() {
+            console.log("Employee Name is:", this.e_name);
+            console.log("Employee ID is:", this.e_id);
+            console.log("Employee Salary is:", this.e_sal);
+
+        }
+    }
+
+    e1 = new Employee('Cristiano', 7, 350000);
+    e1.work();
+    e2 = new Employee('Virat', 18, 250000);
+    e2.code();
+
+    e1.getInfo();
+    e2.getInfo();
+</script>

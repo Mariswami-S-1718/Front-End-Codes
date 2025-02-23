@@ -1,0 +1,17 @@
+<h1 id="heading">Paragraph 1</h1>
+<button id="btn">Click Here to Update DOM Content</button>
+<script>
+    let head = document.getElementById('heading');
+    let btn = document.getElementById('btn');
+    toggle = true;
+    btn.addEventListener('click',()=>{
+        target = document.getElementById('heading');
+        if (toggle == true) {
+            target.head;
+            toggle = false;
+        } else {
+            target.textContent = 'Updated DOM';
+            toggle = true;
+        }
+    })
+</script>

@@ -1,0 +1,18 @@
+<ul></ul>
+<button id="btn">add</button>
+<script>
+    let list = document.querySelector('ul');
+    let btn = document.getElementById('btn');
+    toggle = true;
+    btn.addEventListener('click', ()=> {
+        let newele = document.createElement('li');
+        newele.textContent = 'Item';
+        list.appendChild(newele);
+    })
+
+    // To remove child element
+
+    // const firstele = list.querySelector('li');
+    // list.removeChild(firstele);
+    
+</script>

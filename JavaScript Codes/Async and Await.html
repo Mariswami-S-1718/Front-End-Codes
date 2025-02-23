@@ -1,0 +1,21 @@
+<script>
+    function fetchUserData() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('Fetching User Data');
+                resolve('User Data Fetched');
+            }, 3000);
+        })
+    }
+
+    async function ProcessData() {
+        console.log('Data Processing Started..!');
+        /* fetchUserData().then(() => {console.log('Promise Resolved')}); // in this, the next statements won't be wait for execution
+         of this they will execute automatically */
+        let userdata = await fetchUserData();
+        console.log(userdata);
+        console.log('Process Data Task Ended..!');
+    }
+    ProcessData();
+    console.log('Other Tasks not depend on promise');
+</script>

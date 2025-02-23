@@ -1,0 +1,46 @@
+<!-- var keyword: undefined -->
+  <!-- <script>
+
+    var a;
+    console.log(a); //undefined
+    a = 10;
+    console.log(a); //10
+
+</script>
+
+<script>
+
+    console.log(a1); // undefined
+    console.log(b); // undefined
+    var a1 = 10;
+    var b;
+    console.log(a1, b);  // 10  undefined
+
+</script> -->
+
+<!-- <script>
+
+    console.log(a); // reference error
+    console.log(b); // reference error
+    let a = 10;
+    let b = 30;
+    console.log(a); // 10
+    console.log(b); // 30
+    
+</script> -->
+
+<script>
+
+    // Function Declarations are Hoisted
+    add(10, 20);
+    function add(a, b) {
+        console.log(a+b); // 30
+    }
+
+    // Function Expressions are not Hoisted
+    sub(20, 10);
+    let sub = function(a, b) {
+        console.log(a-b); // referance error
+    }
+
+</script>

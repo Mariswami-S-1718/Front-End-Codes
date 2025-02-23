@@ -1,0 +1,27 @@
+<form id="multifields">
+    <label>Username:</label>
+    <input type="text" id="username">
+    <br><br>
+    <label>Age:</label>
+    <input type="number" id="age">
+    <br><br>
+
+    <button onclick="validate()">Submit</button>
+</form>
+
+<script>
+    function validate() {
+        event.preventDefault();
+        let form = document.getElementById('multifields');
+        let name = form.username.value;
+        let age = form.age.value;
+        // alert(name+" "+age);
+        if (name == '' || age == '') {
+            alert('All Fields are must to filled');
+        }
+        if (age < 0) {
+            alert('Age should be Positive');
+        }
+    }
+
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FirstChild LastChild OnlyChild</title>
+    <style>
+        .content p:first-child {
+            color: blue;
+        }
+        .container div:last-child {
+            color: aqua;
+        }
+        .single-container p:only-child {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>Para 1</p>
+
+        <p>Para 2</p>
+        
+        <p>Para 3</p>
+    </div>
+
+    <div class="container">
+        <div>Div 1</div>
+
+        <div>Div 2</div>
+
+        <div>Div 3</div>
+    </div>
+
+    <div class="single-container">
+    <p>Para inside Div</p>
+    </div>
+</body>
+</html>

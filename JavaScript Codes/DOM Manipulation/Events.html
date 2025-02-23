@@ -1,0 +1,25 @@
+<button id="btn">Click</button>
+<script>
+    let btn = document.getElementById('btn');
+
+    // btn.addEventListener('click',()=>{
+    //     alert('Button Clicked..!');
+    // })
+
+    // btn.addEventListener('dblclick',()=>{
+    //     alert('Button Clicked twice..!');
+    // })
+
+    // btn.addEventListener('mouseover',()=>{
+    //     alert('Button hovered..!');
+    // })
+
+    document.addEventListener('keydown', (event) => {
+        console.log(`Key pressed: ${event.key}`);
+    });
+
+    btn.addEventListener('click',()=>{
+        alert('Button Clicked..!');
+    })
+
+</script>

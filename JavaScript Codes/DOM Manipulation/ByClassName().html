@@ -1,0 +1,15 @@
+<p class="Para">Para 1</p>
+<p class="Para">Para 2</p>
+<p class="Para">Para 3</p>
+<script>
+    let target = document.getElementsByClassName('para');
+    console.log(target.length);
+    let newele = document.createElement('p') // <p></p>
+    newele.textContent = 'Para 4';
+    newele.innerHTML = `<span>Hello!</span>`
+    newele.className = 'para';
+    document.body.appendChild(newele);
+    console.log(target.length);
+</script>
+
+<!--  Selects all elements with a specific class name and returns HTMLCollection  -->

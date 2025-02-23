@@ -1,0 +1,35 @@
+<script>
+
+function checkType(value) {
+    if(Array.isArray(value)) {
+        return 'This is an Array';
+    }
+    else if(typeof value == 'object' && value != null) {
+        return 'object';
+    } 
+    else {
+        return 'Neither';
+    }
+}
+
+console.log(checkType((11, 22)));
+
+//WAC to print sum of array
+//forEach:
+let arr = [11, 12, 13, 14];
+let sum = 0;
+arr.forEach((ele)=>{
+    sum = sum + ele;
+    return sum;
+})
+console.log(sum);
+
+//reduce:
+console.log(arr.reduce((acc,ele)=>acc+ele,0));
+
+//WAC to print product
+//forEach:
+let arr1 = [1, 2, 3, 4, 5];
+console.log(arr1.reduce((pro, ele)=>pro*ele,1));
+
+</script>

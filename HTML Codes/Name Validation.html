@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Name Field Validation</title>
+</head>
+<body>
+    <form>
+        <h2>Name Validation Cases:</h2>
+        <p>1.Name Should Contain Only Characters</p>
+        <p>2.Min Length should be 2</p>
+        <p>3.Max Length should be 15</p>
+
+        <label>Name:</label>
+
+        <input type="text" required
+        pattern="^[a-zA-Z]{2,15}$">
+
+        <button>Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+<!--
+^ start
+[] Character class
+{} range for character class
+$ end
+-->

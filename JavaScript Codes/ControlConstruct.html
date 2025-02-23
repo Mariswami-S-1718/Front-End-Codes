@@ -1,0 +1,98 @@
+<script>
+
+    //if, elseif, else:
+    let age = 20;
+    if (age > 18 && age < 65) {
+        console.log('Adult');
+    }
+    else if (age < 18) {
+        console.log('Child');
+    }
+    else if (age > 65) {
+        console.log('Senior Citizen');
+    }
+
+    //switch:
+    switch (age) {
+        case 33:
+            console.log('Age is 33');
+            break;
+        case 65:
+            console.log('Age is 65');
+            break;
+        default:
+            console.log('Age is:', age);
+            break;
+    }
+
+    function getDayType(day) {
+        switch (day) {
+            case "Monday":
+            case "Tuesday":
+            case "Wednesday":
+            case "Thursday":
+            case "Friday":
+                return "WeekDay";
+            case "Saturday":
+            case "Sunday":
+                return "Weekend";
+            default:
+                return "Unknown day";
+        }
+    }
+    console.log(getDayType("Saturday"));
+
+
+    /*Looping Control Construct*/
+
+    //for loop: normal we dont use normally this in Java Script
+    for (let i = 0; i <= 10; i++) {
+        console.log(i);
+    }
+    //for loop: used in js : it will return array element values
+    let arr = [10, 20, 30];
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+
+    //forEach loop
+    arr.forEach((ele) => console.log(ele));
+
+    //for...in loop: it will return the index number
+    for (i in arr) {
+        console.log(i);
+    }
+
+    //for...of loop: it will return the values fo array elements
+    for (i of arr) {
+        console.log(i);
+    }
+
+    // while loop: it will 10 numbers from 1 to 10
+    let a = 1
+    while (a <= 10) {
+        console.log(a);
+        a++;
+    }
+
+    // do-while loop: it will 10 numbers from 1 to 10
+    let b = 1;
+    do {
+        console.log(b);
+        b++;
+    } while (b <= 10);
+
+    // break: the break statement exits the loop immediately, regardless of the condtion
+    for (let i = 1; i <= 5; i++) {
+        if (i == 3) break;
+        console.log(i);
+    }
+
+    // continue: the continue statement skips the current iteration and moves to the next iteration of the loop
+    for (let i = 1; i <= 5; i++) {
+        if (i == 3) continue;
+        console.log(i);
+    }
+
+
+</script>

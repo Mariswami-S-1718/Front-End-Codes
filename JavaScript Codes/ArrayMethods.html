@@ -1,0 +1,47 @@
+<script>
+
+    let arr = [10, 20, 30];
+
+    // push() : Add an element at the end
+    arr.push(40);    // arr = [10, 20, 30, 40]
+
+     // pop() : Removes an element at the end
+    arr.pop();       // arr = [10, 20, 30]
+
+     // unshift() : Adds an element at 0th index
+    arr.unshift(5);  // arr = [5, 10, 20, 30]
+
+     // shift() : Removes an element at 0th index
+    arr.shift();     // arr = [10, 20, 30]
+
+    // splice() method : It is a powerful tool for adding, removing or replacing 
+    // an elements in an array at specific positions
+    // arr.splice(start, deleteCount, elements to be added)
+    let arr1 = [1, 2, 3, 4, 5];
+    removed_ele = arr1.splice(0, 3, 200, 400);    // arr1 = [200, 400, 4, 5]
+    console.log(removed_ele)    // [1, 2, 3]
+
+    // slice(start, end-1): returns a shallow copy of a portion of an array without modifying the original array
+    let arr2 = [1, 2, 3, 4, 5];
+    sub_arr2 = arr2.slice(1, 4);
+    console.log('Sub Array:', sub_arr2); // [2, 3, 4]
+
+    // indexof(): returns the index of the specified element or -1 if not found
+    let arr3 = [1, 2, 3, 4, 5];
+    console.log(arr3.indexOf(4)); // output : 3 (index)
+
+    // includes(): checks if an array contains a specific element
+    let arr4 = [1, 2, 3, 4, 5];
+    console.log(arr4.includes(40)); // output : false
+
+    // sort(): sort elements in place as String by defualt
+    let letters = ['d','a', 'c', 'b'];
+    letters.sort();
+    console.log(letters); // ['a', 'b', 'c', 'd']
+
+    // reverse(): reverse the order of elements in array
+    let arr7 = [1, 2, 3, 4, 5, 6, 7];
+    arr7.reverse();
+    console.log(arr7); // [7, 6, 5, 4, 3, 2, 1]
+
+</script>

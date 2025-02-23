@@ -1,0 +1,27 @@
+p {
+    border: 2px solid black;
+    height: 100px;width: 100px;
+    background-color: lightsalmon;
+    border-radius: 50px;
+    animation: circle 3s infinite;
+}
+
+@keyframes circle {
+
+    0% {
+        background-color: aqua;
+        transform: translate(0,0);
+    }
+    25% {
+        background-color: lightcoral;
+        transform: translate(400px,0);
+    }
+    50% {
+        background-color: blueviolet;
+        transform: translate(400px,400px);
+    }
+    75% {
+        background-color: lightpink;
+        transform: translate(0,400px);
+    }
+}

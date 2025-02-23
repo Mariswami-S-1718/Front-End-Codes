@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Child Selector</title>
+    <style>
+
+        /* Select only Direct Childs of div (p) */
+        div > p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Direct p1</p>
+            <span>
+                <p>Inner p of span</p>
+            </span>
+    <p>Direct p2</p>
+    </div>
+</body>
+</html>

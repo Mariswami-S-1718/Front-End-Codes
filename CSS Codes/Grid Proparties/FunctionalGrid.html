@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functional Grid</title>
+    <style>
+        .grid-container {
+            background-color: lightblue;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: green;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>Rs.240</p>
+        </div>  
+        
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>Rs.360</p>
+        </div>  
+        
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>Rs.420</p>
+        </div>  
+
+    </div>
+</body>
+</html>

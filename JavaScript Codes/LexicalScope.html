@@ -1,0 +1,17 @@
+<script>
+
+    let g = 300;
+    function outer() {
+        let out = 100;
+        console.log('Accessing global variable inside outer:', g); //300
+        //console.log('Accessing inn variable inside outer:', inn); // error
+        function inner() {
+            let inn = 200;
+            console.log('Accessing global variable inside inner:', g); //300
+            console.log('Accessing out variable inside inner:', out); //100
+        } 
+        inner()
+    }
+    outer()
+
+</script>
